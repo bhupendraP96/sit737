@@ -1,0 +1,6 @@
+{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-30T10:23:25.761Z"}
+{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-30T10:23:30.958Z"}
+{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:31:53.714Z"}
+{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:31:58.962Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:32:13.618Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:32:18.826Z"}

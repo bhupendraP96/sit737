@@ -1,0 +1,16 @@
+{"level":"info","message":"Server started on port 3040","service":"calculator-microservice"}
+{"level":"info","message":{"n1":53,"n2":1,"operation":"addition","result":54,"timestamp":"2025-03-30T10:21:18.249Z"},"service":"calculator-microservice"}
+{"level":"info","message":{"n1":53,"n2":1,"operation":"addition","result":54,"timestamp":"2025-03-30T10:21:18.680Z"},"service":"calculator-microservice"}
+{"level":"info","message":{"n1":53,"n2":5,"operation":"addition","result":58,"timestamp":"2025-03-30T10:21:43.248Z"},"service":"calculator-microservice"}
+{"level":"info","message":{"n1":53,"n2":5,"operation":"addition","result":58,"timestamp":"2025-03-30T10:21:48.467Z"},"service":"calculator-microservice"}
+{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-30T10:23:25.761Z"}
+{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-30T10:23:30.958Z"}
+{"level":"info","message":"Server started on port 3040","service":"calculator-microservice"}
+{"level":"info","message":{"n1":53,"n2":20,"operation":"addition","result":73,"timestamp":"2025-03-30T10:29:17.988Z"},"service":"calculator-microservice"}
+{"level":"info","message":{"n1":53,"n2":20,"operation":"addition","result":73,"timestamp":"2025-03-30T10:29:18.186Z"},"service":"calculator-microservice"}
+{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:31:53.714Z"}
+{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:31:58.962Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:32:13.618Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:32:18.826Z"}
+{"level":"info","message":{"n1":50,"n2":5,"operation":"division","result":10,"timestamp":"2025-03-30T10:32:27.615Z"},"service":"calculator-microservice"}
+{"level":"info","message":{"n1":50,"n2":5,"operation":"division","result":10,"timestamp":"2025-03-30T10:32:27.825Z"},"service":"calculator-microservice"}
