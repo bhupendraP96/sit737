@@ -19,6 +19,7 @@ const add = (n1, n2) => n1 + n2;
 const subtract = (n1, n2) => n1 - n2;
 const multiply = (n1, n2) => n1 * n2;
 const divide = (n1, n2) => {
+    //avoiding divion by 0
   if (n2 === 0) {
     throw new Error("Cannot divide by zero");
   }
@@ -31,6 +32,7 @@ const calculate = (operation, req, res, operationType) => {
     const n1 = parseFloat(req.query.n1);
     const n2 = parseFloat(req.query.n2);
 
+    // validating user input
     if (isNaN(n1)) throw new Error("n1 incorrectly defined");
     if (isNaN(n2)) throw new Error("n2 incorrectly defined");
     if (n1 === NaN || n2 === NaN) {
@@ -49,6 +51,7 @@ const calculate = (operation, req, res, operationType) => {
 
     res.status(200).json({ statusCode: 200, data: result });
   } catch (error) {
+    //logging error
     logger.error({
       message: error.message,
       operation: operationType,
@@ -65,6 +68,7 @@ app.get("/subtract", (req, res) => calculate(subtract, req, res, "subtraction"))
 app.get("/multiply", (req, res) => calculate(multiply, req, res, "multiplication"));
 app.get("/divide", (req, res) => calculate(divide, req, res, "division"));
 
+//connecting to the server
 const port = 3040;
 app.listen(port, () => {
   logger.info(`Server started on port ${port}`);
