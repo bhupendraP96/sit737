@@ -14,14 +14,6 @@ const logger = winston.createLogger({
   ],
 });
 
-// if (process.env.NODE_ENV !== "production") {
-//   logger.add(
-//     new winston.transports.Console({
-//       format: winston.format.simple(),
-//     })
-//   );
-// }
-
 // functions for performing the mathematical operations
 const add = (n1, n2) => n1 + n2;
 const subtract = (n1, n2) => n1 - n2;
