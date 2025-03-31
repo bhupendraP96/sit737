@@ -26,25 +26,31 @@ const divide = (n1, n2) => {
   return n1 / n2;
 };
 
+// new arithmetic operations
+const power = (n1, n2) => Math.pow(n1, n2);
+const sqrt = (n1) => {
+  if (n1 < 0) throw new Error("Cannot compute square root of a negative number");
+  return Math.sqrt(n1);
+};
+const modulo = (n1, n2) => n1 % n2;
+
 // handling operations
-const calculate = (operation, req, res, operationType) => {
+const calculate = (operation, req, res, operationType, singleInput = false) => {
   try {
     const n1 = parseFloat(req.query.n1);
-    const n2 = parseFloat(req.query.n2);
+    const n2 = singleInput ? null : parseFloat(req.query.n2);
 
     // validating user input
     if (isNaN(n1)) throw new Error("n1 incorrectly defined");
-    if (isNaN(n2)) throw new Error("n2 incorrectly defined");
-    if (n1 === NaN || n2 === NaN) {
-      throw new Error("Parsing Error");
-    }
-    const result = operation(n1, n2);
+    if (!singleInput && isNaN(n2)) throw new Error("n2 incorrectly defined");
+  
+    const result = singleInput ? operation(n1) : operation(n1, n2);
 
     //logging info
     logger.info({
       operation: operationType,
       n1,
-      n2,
+      n2: singleInput ? undefined : n2,
       result,
       timestamp: new Date().toISOString(),
     });
@@ -67,6 +73,9 @@ app.get("/add", (req, res) => calculate(add, req, res, "addition"));
 app.get("/subtract", (req, res) => calculate(subtract, req, res, "subtraction"));
 app.get("/multiply", (req, res) => calculate(multiply, req, res, "multiplication"));
 app.get("/divide", (req, res) => calculate(divide, req, res, "division"));
+app.get("/power", (req, res) => calculate(power, req, res, "exponentiation"));
+app.get("/sqrt", (req, res) => calculate(sqrt, req, res, "square root", true));
+app.get("/modulo", (req, res) => calculate(modulo, req, res, "modulo"));
 
 //connecting to the server
 const port = 3040;

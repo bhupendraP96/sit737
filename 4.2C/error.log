@@ -1,6 +1,8 @@
-{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-30T10:23:25.761Z"}
-{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-30T10:23:30.958Z"}
-{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:31:53.714Z"}
-{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:31:58.962Z"}
-{"level":"error","message":"n1 incorrectly defined","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:32:13.618Z"}
-{"level":"error","message":"n1 incorrectly defined","operation":"division","service":"calculator-microservice","timestamp":"2025-03-30T10:32:18.826Z"}
+{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-31T09:11:42.060Z"}
+{"level":"error","message":"n2 incorrectly defined","operation":"addition","service":"calculator-microservice","timestamp":"2025-03-31T09:11:42.245Z"}
+{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-31T09:11:53.795Z"}
+{"level":"error","message":"Cannot divide by zero","operation":"division","service":"calculator-microservice","timestamp":"2025-03-31T09:11:53.984Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"exponentiation","service":"calculator-microservice","timestamp":"2025-03-31T09:12:37.868Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"exponentiation","service":"calculator-microservice","timestamp":"2025-03-31T09:12:38.058Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"square root","service":"calculator-microservice","timestamp":"2025-03-31T09:14:48.126Z"}
+{"level":"error","message":"n1 incorrectly defined","operation":"square root","service":"calculator-microservice","timestamp":"2025-03-31T09:14:48.312Z"}
